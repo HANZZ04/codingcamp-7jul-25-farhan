@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>ToDo List</h1>
+
+  <!-- Form tambah -->
+  <div class="form-control">
+    <input type="text" id="todo-input" placeholder="Tambahkan tugas..." />
+    <button onclick="addTodo()">Tambah</button>
+  </div>
+
+  <!-- Filter -->
+  <div class="filter-control">
+    <input type="text" id="filter-input" placeholder="Filter tugas..." oninput="filterTodos()" />
+  </div>
+
+  <!-- Daftar tugas -->
+  <ul id="todo-list"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
